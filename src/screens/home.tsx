@@ -2,7 +2,6 @@ import type { Audio } from 'expo-av';
 import React, { useState, useCallback } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import '@src/lib/polyfill';
 import AudioStudio from '@src/components/AudioStudio';
 import SoundPlayer from '@src/components/SoundPlayer';
 
@@ -23,9 +22,9 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.safeAreaView}>
       <View style={styles.containerSounds}>
-        {sounds.map((sound) => (
-          // eslint-disable-next-line no-underscore-dangle
-          <SoundPlayer key={Number(sound._key)} sound={sound} />
+        {sounds.map((sound, index) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <SoundPlayer key={index} sound={sound} />
         ))}
       </View>
       <AudioStudio handleSound={handleSound} />
