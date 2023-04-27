@@ -2,6 +2,7 @@ import type { Audio } from 'expo-av';
 import React, { useState, useCallback } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import '@src/lib/polyfill';
 import AudioStudio from '@src/components/AudioStudio';
 import SoundPlayer from '@src/components/SoundPlayer';
 
