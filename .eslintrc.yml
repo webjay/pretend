@@ -1,0 +1,25 @@
+root: true
+env:
+  es6: true
+  node: true
+  browser: false
+extends:
+  - plugin:react/recommended
+  - plugin:react-hooks/recommended
+  - airbnb
+  - airbnb-typescript
+  - prettier
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parserOptions:
+  project: './tsconfig.json'
+plugins:
+  - react
+rules:
+  react/no-multi-comp: 2
+  max-len: ['error', { 'code': 140 }]
+  react/prop-types: off
+settings:
+  react:
+    version: detect

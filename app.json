@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Pretend",
+    "slug": "pretend",
+    "scheme": "pretend",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "web": {
+      "bundler": "metro"
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    }
+  }
+}
