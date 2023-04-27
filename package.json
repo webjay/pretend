@@ -2,7 +2,7 @@
   "name": "pretend",
   "description": "",
   "version": "1.0.0",
-  "license": "UNLICENSED",
+  "license": "ISC",
   "main": "./src/index.ts",
   "scripts": {
     "expo": "expo-cli",
